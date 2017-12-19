@@ -1,0 +1,23 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: #292929;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+.menu-con {
+    font-family: monospace;
+    font-size: 2rem;
+    border: 1px solid black;
+}
+
+.menu-list {
+    display:flex;
+}
+
+.menu-list__item {
+
+}
