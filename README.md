@@ -26,3 +26,7 @@ this.props.dispatcher([
   this.props.dispatcher('foo.actionAfterAsync')
 })
 ```
+# To Run:
+- make sure your node version is up to date.
+- run `npm install`
+- for local dev server, run `npm run start`. The app should bundle and start the server with hot reloading @ `localhost:8080`
