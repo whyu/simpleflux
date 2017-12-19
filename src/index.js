@@ -18,9 +18,10 @@ const availableActions = composeActions([actions])
 // Store
 import store from './store';
 
+// Main, parent component
 import Main from './Main';
 
-const FluxApp = wrapFlux(Main, actions, store);
+const FluxApp = wrapFlux(Main, availableActions, store);
 
 ReactDOM.render(
     <FluxApp/>

@@ -10,6 +10,22 @@ const foobar = function foobar(currentStore, extras){
     return Promise.resolve(newStore);
 }
 
+// this is not hooked up to anything yet, but is how async operations are handled
+const asyncFoo = function asyncFoo(currentStore, extras) {
+    const newStore = extendObject(true, {}, currentStore);
+    const d = new Deferred;
+    // do something async
+    // if (){
+    //     d.resolve(newStore)
+    // }
+    // else {
+    //     d.reject(error)
+    // }
+
+    return d.promise;
+}
+
 export {
     foobar,
+    asyncFoo,
 }
