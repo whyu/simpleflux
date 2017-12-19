@@ -1,4 +1,5 @@
 # This is a simple flux implementation.
+- main code in `js` folder
 - The idea is that React will rerender its subcomponents lazily depending on the state of its parent components, so every time we dispatch an action, it will call the reducer, create a copy of the current state, perform the operation and return the new state.
 - In this case, we wrap our main component with the `Capacitor` class in `flux.js`, which includes a built in `dispatcher`, which is passed into the main component as a prop.
 - The dispatcher calls the action to Do (in the `action.js` file), which runs the reducer in (`reducer.js`) and modifies the store (the MAIN state tree).
